@@ -2,7 +2,7 @@
 // @name            notion.so-inline-math-equations
 // @namespace       https://github.com/ghosw/notion-inline-math-equations
 // @match           https://www.notion.so/*
-// @version         0.5
+// @version         0.0.1
 // @description     Render Latex in notion
 // @require         https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js
 // @require         https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js
