@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Notion Inline Latex Math Equation
-// @namespace       https://github.com/Penguinlay/notion-inline-latex
+// @namespace       https://github.com/ghosw/notion-inline-math-equations
 // @match           https://www.notion.so/*
 // @version         0.5
 // @description     Render Latex in notion
