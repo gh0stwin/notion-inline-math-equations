@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name            notion-inline-math-equations
+// @name            notion.so-inline-math-equations
 // @namespace       https://github.com/ghosw/notion-inline-math-equations
 // @match           https://www.notion.so/*
 // @version         0.5
