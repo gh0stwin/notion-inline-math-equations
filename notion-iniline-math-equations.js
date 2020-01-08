@@ -35,7 +35,7 @@ function renderInlineLaTeX() {
   renderMathInElement(document.body, {
     delimiters: [
       // LaTeX delimiters (uncomment/add as needed)
-      // { left: "$$" , right: "$$" , display: true  },
+      { left: "$$" , right: "$$" , display: true  },
       // { left: "\\[", right: "\\]", display: true  },
       // { left: "\\(", right: "\\)", display: false },
       { left: "$", right: "$", display: false }
