@@ -6,14 +6,14 @@
 // @description     Render Latex in notion
 // @require         https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js
 // @require         https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js
-// @grant           katexStyle
+// @grant           GM_addStyle
 // ==/UserScript==
 
 // Acknowledgement
 // This script was inspired by: https://github.com/evertheylen/notion-inline-math & https://github.com/Penguinlay/notion-inline-latex
 
 // right-padding for inline math mode
-katexStyle(`
+GM_addStyle(`
 .katex {
     padding-right: 0 !important;
 }
