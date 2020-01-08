@@ -45,6 +45,6 @@ function renderInlineLaTeX() {
   activeEl.classList.remove('do-not-render-katex-123456789');
 }
 
-katexLink = htmlToElement('<link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" type="text/css" rel="stylesheet">');
+katexLink = htmlToElement('<link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" type="text/css" rel="stylesheet">');
 document.head.appendChild(katexLink);
 setInterval(renderInlineLaTeX, timeBetweenRenders);
