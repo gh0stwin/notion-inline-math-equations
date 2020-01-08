@@ -1,4 +1,4 @@
-# notion-inline-latex-equations
+# notion-inline-math-equations
 Inline latex rendering for math equations.
 ## Acknowledgement
 This project is based on [Penguinlay](https://github.com/Penguinlay/notion-inline-latex) and [evertheylen](https://github.com/evertheylen/notion-inline-math) projects.
