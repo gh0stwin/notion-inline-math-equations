@@ -19,7 +19,7 @@ Here I tried a different approach and render every block that is not receiving i
 5. Click on ```Install from url```
 ![screenshot_4](https://raw.githubusercontent.com/ghosw/notion-inline-math-equations/master/images/Screenshot%202020-01-08%20at%2015.57.16.png)
 
-6. Paste the following link and click ```Ok```
+6. Paste the following link ```https://greasyfork.org/scripts/398453-notion-inline-math-equations/code/notion-inline-math-equations.user.js``` and click ```Ok```
 ![screenshot_5](https://raw.githubusercontent.com/ghosw/notion-inline-math-equations/master/images/Screenshot%202020-01-08%20at%2015.59.31.png)
 ![screenshot_6](https://raw.githubusercontent.com/ghosw/notion-inline-math-equations/master/images/Screenshot%202020-01-08%20at%2016.00.24.png)
 
