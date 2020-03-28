@@ -32,7 +32,13 @@ function htmlToElement(str) {
 function renderInlineLaTeX() {
   activeEl = document.activeElement;
   activeEl.classList.add('do-not-render-katex-123456789');
-  renderMathInElement(document.body, {
+  let el = document.getElementsByClassName("notion-page-content")[0];
+  
+  if (!el) {
+    return;
+  }
+
+  renderMathInElement(el, {
     delimiters: [
       // LaTeX delimiters (uncomment/add as needed)
       { left: "$$" , right: "$$" , display: true  },
