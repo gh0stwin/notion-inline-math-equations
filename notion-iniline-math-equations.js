@@ -20,7 +20,6 @@ GM_addStyle(`
 `);
 
 let timeBetweenRenders = 500;
-
 function htmlToElement(str) {
     var template = document.createElement('template');
     str = str.trim(); // Never return a text node of whitespace as the result
@@ -31,24 +30,26 @@ function htmlToElement(str) {
 // render inline LaTeX
 function renderInlineLaTeX() {
   activeEl = document.activeElement;
-  activeEl.classList.add('do-not-render-katex-123456789');
-  let el = document.getElementsByClassName("notion-page-content")[0];
+  if (activeEl.tagName!="INPUT") {
+    activeEl.classList.add('do-not-render-katex-123456789');
+    let el = document.getElementsByClassName("notion-page-content")[0];
+    
+    if (!el) {
+      return;
+    }
   
-  if (!el) {
-    return;
+    renderMathInElement(el, {
+      delimiters: [
+        // LaTeX delimiters (uncomment/add as needed)
+        { left: "$$" , right: "$$" , display: true  },
+        // { left: "\\[", right: "\\]", display: true  },
+        // { left: "\\(", right: "\\)", display: false },
+        { left: "$", right: "$", display: false }
+      ],
+      ignoredClasses: ['do-not-render-katex-123456789']
+    });
+    activeEl.classList.remove('do-not-render-katex-123456789');
   }
-
-  renderMathInElement(el, {
-    delimiters: [
-      // LaTeX delimiters (uncomment/add as needed)
-      { left: "$$" , right: "$$" , display: true  },
-      // { left: "\\[", right: "\\]", display: true  },
-      // { left: "\\(", right: "\\)", display: false },
-      { left: "$", right: "$", display: false }
-    ],
-    ignoredClasses: ['do-not-render-katex-123456789']
-  });
-  activeEl.classList.remove('do-not-render-katex-123456789');
 }
 
 katexLink = htmlToElement('<link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" type="text/css" rel="stylesheet">');
